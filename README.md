@@ -117,7 +117,6 @@ mov ax,1024h;
 mov bx,2012h;
 mul bx;
 mov [1A23H],ax;
-
 ret
 ```
 ## Output  
@@ -129,7 +128,6 @@ ret
 
 ```
 org 100h
-
 mov ax,1024h;
 mov bx,1012h;
 div bx;
@@ -140,6 +138,56 @@ ret
 ## Output  
 
 ![image](https://github.com/Pranav-AJ/EXPERIMENT--01-ALP-FOR-8086/assets/118904526/73ae82ad-09e7-4cc3-88cb-e6f3930d594b)
+
+## Logical operators
+
+## AND
+```
+org 100h
+mov bx,1000h;
+and bx,1111h;
+mov [0040h+02],bx;
+ret
+```
+## OUTPUT
+![image](https://github.com/Pranav-AJ/EXPERIMENT--01-ALP-FOR-8086/assets/118904526/ad586824-7b7c-405d-8ac8-7ecad4189bb3)
+
+## OR
+```
+org 100h
+mov ax,[0040h+06];
+mov bx,1000h;
+or ax,bx;
+mov [0040h+02],ax;
+ret
+```
+## OUTPUT
+![image](https://github.com/Pranav-AJ/EXPERIMENT--01-ALP-FOR-8086/assets/118904526/4cb41ad3-6047-4343-bfe8-ed88419a5cdf)
+
+## NOT
+```
+org 100h
+mov bx,0040h;
+mov ax,[bx]; 
+not al;
+mov [0040h+04],ax;
+ret
+```
+## OUTPUT
+![image](https://github.com/Pranav-AJ/EXPERIMENT--01-ALP-FOR-8086/assets/118904526/8c894048-b1d4-456e-a4cd-e2e73381ce7f)
+
+## XOR
+```
+org 100h
+mov bx,0040h;
+mov ax,[bx]; 
+xor ax,bx;
+mov [0040h+04],ax;
+ret
+```
+## OUTPUT
+![image](https://github.com/Pranav-AJ/EXPERIMENT--01-ALP-FOR-8086/assets/118904526/b542690a-6d40-4508-9b05-1d0f78f8afd2)
+
 ## Result :
 Thus,the program is executed on ALP for the fundamental arithmetic and logical operations. 
 
