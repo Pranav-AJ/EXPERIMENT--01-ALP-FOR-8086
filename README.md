@@ -1,7 +1,10 @@
-# EXPERIMENT--01-ALP-FOR-8086
-Name : A.J.PRANAV
-Roll no :21222230107
-Date of experiment : 20-02-2024
+
+#### Name : A.J.PRANAV
+#### Roll no :212222230107
+
+
+# EXPERIMENT-01 ALP FOR 8086
+
 
 
 
